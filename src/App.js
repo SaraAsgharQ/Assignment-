@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch,useHistory } from 'react-router-dom';
 import Preloader from './components/layouts/Preloader';
 import Dashboard from './components/pages/Dashboard';
+import Certifications from './components/pages/certifications';
 // import Addproduct from './components/pages/Addproduct';
 // import Menugrid from './components/pages/Menugrid';
 // import Orders from './components/pages/Orders';
@@ -28,6 +29,7 @@ function App() {
       <Preloader/>
       <Switch>
         <Route exact path="/" component={Dashboard} />
+        <Route exact path="/certifications" component={Certifications} />
         {/* <Route path="/add-product" component={Addproduct} />
         <Route path="/menu-grid" component={Menugrid} />
         <Route path="/view-categories" component={ViewCategories} />
